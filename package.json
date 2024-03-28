@@ -1,0 +1,26 @@
+{
+  "name": "teste-pr-tico-3x-web",
+  "version": "1.0.0",
+  "description": "Desenvolver uma aplicação simples que utilize Node.js para o backend e MongoDB como banco de dados.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js localhost 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosRibeiro086/Teste-Pr-tico-3x-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcosRibeiro086/Teste-Pr-tico-3x-web/issues"
+  },
+  "homepage": "https://github.com/MarcosRibeiro086/Teste-Pr-tico-3x-web#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.2.4",
+    "nodemon": "^3.1.0"
+  }
+}
