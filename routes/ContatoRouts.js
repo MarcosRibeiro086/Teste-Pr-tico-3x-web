@@ -15,6 +15,7 @@ const validateContato = (nome, telefone) => {
     }
 };
 
+//Adição de novos Contatos
 router.post('/', async (req, res) => {
     const { nome, telefone } = req.body;
 
@@ -33,6 +34,7 @@ router.post('/', async (req, res) => {
     }
 });
 
+//Recuperar todos os contatos
 router.get('/', async (req, res) => {
     try {
         const contatos = await Contatos.find();
@@ -42,6 +44,7 @@ router.get('/', async (req, res) => {
     }
 });
 
+//Recuperar contato por id
 router.get('/:id', async (req, res) => {
     const id = req.params.id;
     try {
@@ -55,6 +58,7 @@ router.get('/:id', async (req, res) => {
     }
 });
 
+//Atualizar contato por id
 router.patch('/:id', async (req, res) => {
     const id = req.params.id;
     const { nome, telefone } = req.body;
@@ -71,6 +75,7 @@ router.patch('/:id', async (req, res) => {
     }
 });
 
+//Deletar contato por id
 router.delete('/:id', async (req, res) => {
     const id = req.params.id;
     try {
